@@ -7,7 +7,6 @@ version = "0.1"
 group = "com.example"
 
 repositories {
-    mavenLocal()
     mavenCentral()
 }
 
@@ -21,7 +20,7 @@ micronaut {
 }
 
 dependencies {
-    annotationProcessor("io.micronaut.openapi:micronaut-openapi:2.4.0.1-SNAPSHOT")
+    annotationProcessor("io.micronaut.openapi:micronaut-openapi")
     annotationProcessor("io.micronaut.jaxrs:micronaut-jaxrs-processor")
     implementation("io.micronaut:micronaut-validation")
     implementation("io.micronaut:micronaut-runtime")
